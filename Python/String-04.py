@@ -65,7 +65,7 @@ print(reversed_languaje)
 
 print(lenguaje.upper()) #Pone todo el texto en MAY
 print(lenguaje.lower()) #Pone todo el texto en MIN
-print(lenguaje.count("t")) #Cuenta la cantidad de letras que le pongas vos
+print(lenguaje.count("t")) #Cuenta la cantidad de letras o números que le pongas vos
 print(lenguaje.capitalize()) #Pone la primera letra en MAY
 print("1".isnumeric())  #Verifica si es un número o no
 print(lenguaje.upper().isupper()) #Verifica si esta en MAY o no
