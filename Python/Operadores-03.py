@@ -27,3 +27,25 @@ print(3>4)  #Operador de mayor
 print(3<4)  #Operador de menor
 print(3>=4) #Operador de mayor igual
 print(3<=5) #Operador de menor igual
+print(3!=4) #Operador de distinto
+
+print("--------------------------")
+
+print("Hola"=="Python") 
+print("Java">"Python")  
+print(len("Java")<len("Python"))  #Cuenta caracteres  
+print("Java">="Python") 
+print("Java"<="Python") 
+print("Python"!="Java") 
+
+print("--------------------------------")
+
+#Operadores logicos:
+
+print(3>4 and "Hola">"Python")
+print(3>4 or "Hola">"Python")
+print(3<4 and "Hola"<"Python")
+print(not(3>4))
+
+
+# print(3>4 not "Hola">"Python")
