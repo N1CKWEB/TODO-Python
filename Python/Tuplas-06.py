@@ -1,2 +1,0 @@
-#Tuplas en python
-
