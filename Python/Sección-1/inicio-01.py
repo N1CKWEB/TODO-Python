@@ -54,3 +54,25 @@ dicionario=("","")
 
 print(type(dicionario))
 
+#Tipo Int 
+n1=23
+print(type(n1))
+
+#Tipo String
+n2="N1ck"
+print(type(n2))
+
+#Tipo Float 
+n3=23.3
+print(type(n3))
+
+#Tipo Boolean
+n4=True
+print(type(n4))
+
+
+#Cadena (String)
+
+mi_grupo_favorito="COLDPLAY"
+
+print("Mi grupo favorito de musica es: " + mi_grupo_favorito)
