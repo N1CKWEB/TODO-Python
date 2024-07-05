@@ -50,9 +50,9 @@ num=10
 
 palabra: int="Python" # En python se puede asignarle a una variable el tipo de dato, no es muy común usarlo, pero se puede
 
-dicionario=("","")
+dicionario={"Nicolás"}
 
-print(type(dicionario))
+print(dicionario)
 
 #Tipo Int 
 n1=23
@@ -75,4 +75,65 @@ print(type(n4))
 
 mi_grupo_favorito="COLDPLAY"
 
-print("Mi grupo favorito de musica es: " + mi_grupo_favorito)
+print("Mi grupo favorito de musica es: ",mi_grupo_favorito)
+
+numero1="1"
+
+numero2="2"
+
+print("Concatenación: ", numero1+numero2)
+
+print("Suma ", int(numero1)+ int(numero2))
+
+
+#Tipos booleanos en Python
+
+miTrue=True
+
+print(miTrue)
+
+
+miFalse=False
+
+print(miFalse)
+
+id=3>2
+
+print(id)
+
+
+id3=23>4
+
+
+if id3:
+    print("El resultado fue verdadero")
+else:
+    print("El resultado fue falso")
+
+    
+    
+#Procesar entrada del Usuario(Función input)
+
+miSalida1=input("Escribe el primer número: ")
+
+miSalida2=input("Escribe el segundo número: ")
+
+
+
+print(int(miSalida1)+int(miSalida2))
+
+
+#Ejercicio - Califica tu Día:
+
+calificacionDeDia=input("Cómo estuvo tu dia del (1 al 10): ")
+
+print("Mi dia estuvo de: ",calificacionDeDia)
+ 
+# Ejercicio - Detalles de un Libro
+
+
+titulo=input("Proporciona el título: ")
+
+autor=input("Proporciona el autor: ")
+
+print(titulo," fue escrito por ",autor )
