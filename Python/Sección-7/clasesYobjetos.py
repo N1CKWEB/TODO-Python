@@ -196,18 +196,16 @@ class Perro:
 perro1=Perro("Gua Gua","Comida de Perro")
 
 
- 
-print(perro1.ladrar)
+if __name__ == "__main__":
+  print(perro1.ladrar)
+  perro1.ladrar="GUAAAAAAAAAAAAAAAA"
+  print(perro1.ladrar)
+  print(perro1.comer)
+  perro1.comer="DOG CHOW"
+  print(perro1.comer)
 
-perro1.ladrar="GUAAAAAAAAAAAAAAAA"
 
-print(perro1.ladrar)
 
-print(perro1.comer)
+print(__name__)
 
-perro1.comer="DOG CHOW"
-
-print(perro1.comer)
-
-# Uso de módulos y clases:
 
