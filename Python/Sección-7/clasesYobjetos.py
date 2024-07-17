@@ -14,7 +14,10 @@ class Persona:
   
    def mostrar_detalles(self):
      print(f"Persona: {self.nombre} {self.apellido} {self.edad}{self.valores} y {self.terminos}")
-         
+  
+  # Destructor de objetos:
+   def __del__(self):
+    print(f"Persona: {self.nombre}")       
      
 
 
@@ -194,6 +197,7 @@ class Perro:
 
 
 perro1=Perro("Gua Gua","Comida de Perro")
+
 
 
 if __name__ == "__main__":

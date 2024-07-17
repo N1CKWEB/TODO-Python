@@ -1,0 +1,2 @@
+# Herencia Multiple en python:
+
