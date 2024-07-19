@@ -1,6 +1,6 @@
 #Sobreescritura del método __str__ en python:
 
-from herencia import *
+from Herencia import *
 
 
 persona1=PersonaHumana("Nicolas",19)
