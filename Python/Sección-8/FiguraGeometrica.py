@@ -1,6 +1,9 @@
+# ABC = Abstract Base Class
+from abc import ABC,abstractmethod
+
 # Herencia Multiple en python:
 
-class FiguraGeometrica:
+class FiguraGeometrica(ABC):
     def __init__ (self,alto,ancho):
         if self._validar_valor(ancho):
           self._ancho=ancho
@@ -36,6 +39,12 @@ class FiguraGeometrica:
          self._alto=alto
         else:
             print(f"Valor erroneo del alto: {alto}")
+
+    
+    @abstractmethod
+    def  calcular_area(self):
+         pass  
+
 
      #Método de str()
     def __str__(self) -> str:

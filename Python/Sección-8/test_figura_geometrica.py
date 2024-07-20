@@ -1,8 +1,13 @@
 from Cuadrado import *
 from Rectangulo import *
-
+from FiguraGeometrica import FiguraGeometrica
 
 print("Creacion objeto cuadrado".center(50,"-"))
+
+# No se puede instanciar una clase abstracta
+# figura1= FiguraGeometrica()
+
+
 
 cuadrado1=Cuadrado(lado=5,color='Rojo')
 cuadrado1.alto=9
