@@ -80,6 +80,7 @@ computadora04=Computadora("Computadora Gama ALTA ",monitor04,teclado04,raton04)
 computadoras01=[computadora01,computadora02]    
 computadoras02=[computadora03,computadora04]
 orden01=Orden(computadoras01)
+orden01.agregarComputadora(computadora03)
 print(orden01)
 orden02=Orden(computadoras02)    
 print(orden02)
