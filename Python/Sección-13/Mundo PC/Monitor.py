@@ -11,46 +11,42 @@ class Monitor:
           return cls.contadorMonitores
     
     def __init__(self, marca,tamaño):
-      self.__idMonitor = Monitor.contador_estatico_monitor()
-      self.__marca = marca
-      self.__tamaño=tamaño
+      self._idMonitor = Monitor.contador_estatico_monitor()
+      self._marca = marca
+      self._tamaño=tamaño
       
     #GET y SET
     
     @property
     def idMonitor(self):
-        return self.__idMonitor
+        return self._idMonitor
     
     @idMonitor.setter
     def idMonitor(self,idMonitor):
-        self.__idMonitor=idMonitor 
+        self._idMonitor=idMonitor 
     
     @property
     def marca(self):
-        return self.__marca
+        return self._marca
     
     @marca.setter
     def marca(self,marca):
-        self.__marca=marca 
+        self._marca=marca 
     
     @property
     def tamaño(self):
-        return self.__tamaño
+        return self._tamaño
     
     @tamaño.setter
     def tamaño(self,tamaño):
-        self.__tamaño=tamaño
+        self._tamaño=tamaño
 
     #Método str()
     def __str__(self) -> str:
-        return f"Monitor: [ID: {self.__idMonitor} Marca:{self.__marca} Tamano: {self.__tamaño} ]"
+        return f"Monitor: [ID: {self._idMonitor} Marca:{self._marca} Tamano: {self._tamaño} ]"
     
     
     
-monitor01=Monitor("Samsung","24")
-
-print(monitor01)
-                                                         
                                                           
                                                           
                                                          

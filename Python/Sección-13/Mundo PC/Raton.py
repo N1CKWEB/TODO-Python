@@ -11,31 +11,26 @@ class Raton(DispositivoEntrada):
         return cls.contadorRatones
         
     def __init__(self,tipoEntrada, marca):
+      self._idRaton = Raton.contador_estatico_ratones()
       super().__init__(tipoEntrada,marca)
-      self.__idRaton = Raton.contador_estatico_ratones()
       
     #GET y SET
     
     @property
     def idRaton(self):
-        return self.__idRaton
+        return self._idRaton
     
     @idRaton.setter
     def idRaton(self,idRaton):
-        self.__idRaton=idRaton 
+        self._idRaton=idRaton 
     
     
     
     #Método str()
     def __str__(self) -> str:
-        return f"Raton: [ID: {self.__idRaton} {super().__str__()} ]"
+        return f"Raton: [ID: {self._idRaton} Marca: {self._marca} Tipo de Entrada: {self._tipoEntrada} ]"
     
     
-    
-    
-raton01=Raton("USB","Lenovo")
-
-print(raton01)
     
     
     
