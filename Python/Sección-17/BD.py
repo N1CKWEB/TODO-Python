@@ -3,7 +3,7 @@
 import psycopg2
 
 conexion = psycopg2.connect(
-    user='postgres1',
+    user='postgres',
     password='admin', 
     host='127.0.0.1',
     port='5432',
@@ -41,3 +41,7 @@ finally:
      conexion.close()
   
 # Rollback significa dar vuelta atras a todos los cambios que se allan hecho
+
+
+
+# Lo que hace logging es administrar los mensajes que le mandamos a nuestra consola

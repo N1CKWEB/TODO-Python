@@ -1,0 +1,18 @@
+02:32:12: DEBUG [Logger_base.py:16] Mensaje a nivel de debug 
+02:32:12: INFO [Logger_base.py:17] Mensaje a nivel de info 
+02:32:12: WARNING [Logger_base.py:18] Mensaje a nivel de warning 
+02:32:12: ERROR [Logger_base.py:19] Mensaje a nivel de error 
+02:32:12: CRITICAL [Logger_base.py:20] Mensaje a nivel de critical 
+03:19:38: DEBUG [Persona.py:61] Persona: [ID: 1 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido@gmail.com] 
+03:20:43: DEBUG [Persona.py:61] Persona: [ID: 1 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido@gmail.com] 
+03:22:29: DEBUG [Persona.py:61] Persona: [ID: 1 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido@gmail.com] 
+03:22:29: DEBUG [Persona.py:64] Persona: [ID: None , Nombre: Juan , Apellido: Perez , Edad: None , Email: pereznico@gmail.com] 
+03:23:18: DEBUG [Persona.py:61] Persona: [ID: 1 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido@gmail.com] 
+03:23:18: DEBUG [Persona.py:65] Persona: [ID: None , Nombre: Juan , Apellido: Perez , Edad: None , Email: pereznico@gmail.com] 
+03:23:54: DEBUG [Persona.py:61] Persona: [ID: 1 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido@gmail.com] 
+03:23:54: DEBUG [Persona.py:65] Persona: [ID: None , Nombre: Juan , Apellido: Perez , Edad: None , Email: pereznico@gmail.com] 
+03:23:54: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+03:41:53: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000020413BD58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+03:42:46: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000028262BF58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+03:42:52: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000216897E58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+03:42:52: DEBUG [Conexion.py:39] Se abrio correctamente el cursor: <cursor object at 0x000002168951E260; closed: 0> 
