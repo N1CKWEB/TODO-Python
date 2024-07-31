@@ -16,3 +16,50 @@
 03:42:46: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000028262BF58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
 03:42:52: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000216897E58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
 03:42:52: DEBUG [Conexion.py:39] Se abrio correctamente el cursor: <cursor object at 0x000002168951E260; closed: 0> 
+04:04:51: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:04:51: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000211457718B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:04:51: DEBUG [Conexion.py:39] Se abrio correctamente el cursor: <cursor object at 0x000002114572B5A0; closed: 0> 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 1 , Nombre: Ariel , Apellido: Garrido , Edad: 37 , Email: acaricialapenaldo@gmail.com] 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 3 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido649@gmail.com] 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 8 , Nombre: Sergio , Apellido: Díaz , Edad: 49 , Email: sergiodiaz@gmail.com] 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 19 , Nombre: Mariano , Apellido: Closs , Edad: 54 , Email: todosomosmontielgoool@gmail.com] 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 21 , Nombre: Elon , Apellido: Musk , Edad: 53 , Email: muskteslasolar@gmail.com] 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 23 , Nombre: Alejandro , Apellido: Garnacho , Edad: 19 , Email: garnachotaunited19@gmail.com] 
+04:04:51: DEBUG [Persona_dao.py:51] Persona: [ID: 27 , Nombre: Marck , Apellido: Zuckerberg , Edad: 40 , Email: zuckpython@gmail.com] 
+04:05:07: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:05:07: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000025F325D58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:05:07: DEBUG [Conexion.py:39] Se abrio correctamente el cursor: <cursor object at 0x0000025F3258B5A0; closed: 0> 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 1 , Nombre: Ariel , Apellido: Garrido , Edad: 37 , Email: acaricialapenaldo@gmail.com] 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 3 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido649@gmail.com] 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 8 , Nombre: Sergio , Apellido: Díaz , Edad: 49 , Email: sergiodiaz@gmail.com] 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 19 , Nombre: Mariano , Apellido: Closs , Edad: 54 , Email: todosomosmontielgoool@gmail.com] 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 21 , Nombre: Elon , Apellido: Musk , Edad: 53 , Email: muskteslasolar@gmail.com] 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 23 , Nombre: Alejandro , Apellido: Garnacho , Edad: 19 , Email: garnachotaunited19@gmail.com] 
+04:05:07: DEBUG [Persona_dao.py:51] Persona: [ID: 27 , Nombre: Marck , Apellido: Zuckerberg , Edad: 40 , Email: zuckpython@gmail.com] 
+04:20:09: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:20:09: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x00000229D83758B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:21:17: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:21:18: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001CA832658B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:21:45: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:21:45: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000020C17C30AE0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:22:28: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:22:28: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000001DBBABB58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:23:24: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:23:25: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000002303F7758B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:23:39: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:23:40: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x000002A5BACB58B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:23:40: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:23:40: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000014A8E1858B0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:26:31: DEBUG [Persona.py:69] Persona: [ID: 1 , Nombre: None , Apellido: None , Edad: None , Email: None] 
+04:26:31: DEBUG [Conexion.py:25] Conexion exitosa: <connection object at 0x0000016BA7904BF0; dsn: 'user=postgres password=xxx dbname=test_db host=127.0.0.1 port=5432', closed: 0> 
+04:26:31: DEBUG [Persona_dao.py:38] Persona insertada: Persona: [ID: None , Nombre: Sam , Apellido: Altmam , Edad: 39 , Email: openia@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:57] Personas insertadas: 1 
+04:26:31: DEBUG [Conexion.py:39] Se abrio correctamente el cursor: <cursor object at 0x0000016BA7583300; closed: 0> 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 1 , Nombre: Ariel , Apellido: Garrido , Edad: 37 , Email: acaricialapenaldo@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 3 , Nombre: Nicolás , Apellido: Díaz , Edad: 19 , Email: nicolasdiazgarrido649@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 8 , Nombre: Sergio , Apellido: Díaz , Edad: 49 , Email: sergiodiaz@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 19 , Nombre: Mariano , Apellido: Closs , Edad: 54 , Email: todosomosmontielgoool@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 21 , Nombre: Elon , Apellido: Musk , Edad: 53 , Email: muskteslasolar@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 23 , Nombre: Alejandro , Apellido: Garnacho , Edad: 19 , Email: garnachotaunited19@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 27 , Nombre: Marck , Apellido: Zuckerberg , Edad: 40 , Email: zuckpython@gmail.com] 
+04:26:31: DEBUG [Persona_dao.py:62] Persona: [ID: 28 , Nombre: Sam , Apellido: Altmam , Edad: 39 , Email: openia@gmail.com] 

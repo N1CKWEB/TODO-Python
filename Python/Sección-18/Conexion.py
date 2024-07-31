@@ -43,13 +43,15 @@ class Conexion:
            sys.exit()
       else:
         return cls._cursor
-    
-    
-if __name__ == "__main__":
-  Conexion.obtener_conexion()
-  Conexion.obtener_cursor()
-      
+     
+           
     # @classmethod
     # def cerrar(cls):
     #     pass      
+    
+           
+if __name__ == "__main__":
+  Conexion.obtener_conexion()
+  Conexion.obtener_cursor()
+
       
