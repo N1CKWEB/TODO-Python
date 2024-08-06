@@ -11,7 +11,7 @@ class Conexion:
     _HOST = "127.0.0.1"
     _MIN_CONEXIONES=1
     _MAX_CONEXIONES=5
-    _pool=None #Es un objeto que va administrar a sus los ojectos de conexion hacia a la BD 
+    _pool=None #Es un objeto que va administrar a sus ojectos de conexion hacia a la BD 
     
     @classmethod
     def obtener_poll(cls):

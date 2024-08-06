@@ -19,7 +19,7 @@ class Persona:
       def id_persona(self,id_persona):
           self._id_persona=id_persona
       
-      @property
+    #   @property
       def nombre(self):
           return self._nombre
       
