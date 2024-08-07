@@ -4,7 +4,7 @@
 
 try:
   # archivo=open("c:\\RUTA DE PYTHON DEVELOPER\\Python\\Sección-15\\prueba.txt","r")
-  archivo=open("prueba.txt","r")
+  archivo=open("prueba.txt","r",encoding="UTF-8")
   #Leer algunos caracteres
   # print(archivo.readlines(7))
 except Exception as e:

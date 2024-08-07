@@ -46,3 +46,5 @@ while opcion != 5:
         print(f'Ocurrio un error: {e}')
 
 print('Salimos del programa...')
+
+
