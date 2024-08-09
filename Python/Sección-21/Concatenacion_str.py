@@ -197,4 +197,58 @@ res=10*[0]
 print(f"Lista veces: {res}")
 
 
+# Caracteres de escape
+
+res='Hola \' Mundo'
+
+
+print(f"Res: {res}")
+
+res="Hola \n Mundo"
+
+print(f"Res: {res}")
+
+# Backspace = Retroceso de caracter
+
+
+res2='Se va a eliminar el punto.\b\b\b'
+
+print(f"Res: {res2}")
+
+# Caracter \
+    
+res='c:\\directorio\\juan'
+
+print(f"Res: {res}")
+
+
+# Row string
+
+res=r'Cadena con \n salto de linea'
+print(f"Res: {res}")
+
+
+
+
+# Caracteres Unicode, es un set de caracteres universal, es decir, un estandar en el que se definen todos los caracteres necesarios para la escritura de la mayoria de los idiomas hablados en la actualidad que se usan en la computadora
+
+
+print('Hola\u0020Mundo')
+print('Notacion simple: ','\u0041')
+print('Notacion extendida: ','\U00000041')
+print('Notacion hexadecimal: ','\x41')
+
+
+
+# ASCII- American Standard Code for Information Interchange, es un estandar para la representación de caracteres en cualquier dispositivo electrónico
+
+
+
+caracter=chr(64)
+print(f"Caracter: {caracter}")
+
+caracter=chr(23)
+print(f"Caracter: {caracter}")
+
+
 
