@@ -31,7 +31,7 @@ print(type(MiClase.mi_metodo))
 
 
 # Inmutable = No Modificable
-# help(str.capitalize)
+# help(str.capitalize),
 mensaje1="hola mundo"
 mensaje2=mensaje1.capitalize()
 print(f"Mensaje 1: {mensaje1}, id: {hex(id(mensaje1)) }")
@@ -123,13 +123,78 @@ print(mensaje_con_formato_2%persona)
 
 # Uso del método format en python
 
+# 1 primera forma
+nombre="Fabricio"
+edad=29
+sueldo=3000
+mensaje_con_formato="Nombre {} Edad: {} Sueldo: {:.2f}".format(nombre,edad,sueldo)
+
+print(mensaje_con_formato)
+
+
+# 2 segunda forma
+
+mensaje='Nombre {0} Edad: {1} Sueldo: {2:.2f}'.format(nombre,edad,sueldo)
+
+# print(mensaje)
+
+# 3 tercera forma
+
+mensaje='Sueldo {2:.2f} Edad: {1} Nombre: {0}'.format(nombre,edad,sueldo)
+
+print(mensaje)
+
+
+# 4 cuarta forma
+
+mensaje="Nombre {n} Edad {e} Sueldo {s:.2f} ".format(n=nombre,e=edad,s=sueldo)
+
+print(mensaje)
+
+# 5 Quinta forma 
+
+diccionario={'nombre':"Ivan",
+             'edad':45,
+             'sueldo':8000.00}
+
+mensaje="Nombre {persona[nombre]} Edad {persona[edad]} Sueldo {persona[sueldo]:.2f}".format(persona=diccionario)
+
+print(mensaje)
+
+
+# 6 Sexta Forma
+
+# Uso de f-string (Template Literal)
+
+
+mensaje=f"Nombre {nombre} Edad {edad} Sueldo {sueldo:.2f}"
+print(mensaje)
 
 
 
+# Método print, (sep separa las cadenas)
+print(nombre,edad,sueldo,sep='-')
 
 
 
+# Multiplicacion de cadenas(str) en python
 
+res=5*"Hola"
+
+print(res)
+
+# Multiplicacion de tuplas
+
+res=5*("Hola","Mundo")
+print(f"Tupla veces: {res}")
+
+
+
+# Multiplicacion de listas
+
+res=10*[0]
+
+print(f"Lista veces: {res}")
 
 
 
