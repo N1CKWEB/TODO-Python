@@ -19,6 +19,11 @@ with open('pythonIA.txt','r',encoding='UTF-8') as archivo:
 
 print(contenido.count('Python'))
 
+# Método replace y strip, reemplazar contenido en un string
+
+print(contenido.replace(' ','-'))
+
+
 
 # Método upper
 

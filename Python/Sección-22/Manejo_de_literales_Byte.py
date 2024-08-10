@@ -45,4 +45,54 @@ print(f"String decodificado: {string2}")
 
 print(string == string2)
 
+# Center - Centrar un str
 
+titulo="Sitio Web official N1ckweb"
+
+
+# print(titulo.center(50,'*'))
+# print(len(titulo.center(50,'*')))
+
+print(titulo.center(len(titulo)+10,'-'))
+
+
+# Alineado a la izquierda con el método (ljust) justifica a la izquierda
+
+print(titulo.ljust(50,'/'))
+
+print(titulo.ljust(len(titulo)+10,'-'))
+
+
+
+# Alineado a la derecha con el método (rjust) justifica a la derecha
+
+print(titulo.rjust(50,'*'))
+
+print(titulo.rjust(len(titulo)+10,'-'))
+
+
+# Eliminar caracteres al inicio y final de una cadena
+
+titulo1='*** PythoIADataScients.com *** ' 
+print(f'Cadena original: {titulo1} {len(titulo1)}')
+
+# El método strip() quita los espacios en blanco al inicio de la cadena y al final
+
+titulo1=titulo1.strip()
+print(f"Cadena modificada {titulo1} {len(titulo1)}")
+
+titulo1='***PythoIADataScients.com***'.strip('*')
+print(titulo1) 
+
+# Quita lo espacio en blanco de la izquierda con (lstrip())
+titulo1='***PythoIADataScients.com***'.lstrip('*')
+print(titulo1)
+
+# Quita lo espacio en blanco de la derecha con (rstrip())
+titulo1='***PythoIADataScients.com***'.rstrip('*')
+print(titulo1)
+
+# Forma de quitarlo sin usar cada método del lado derecho y izquierdo
+titulo1='*** PythoIADataScients.com *** '.strip().strip('*').strip('*')
+
+print(titulo1)
