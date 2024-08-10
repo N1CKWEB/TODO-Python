@@ -96,3 +96,4 @@ print(titulo1)
 titulo1='*** PythoIADataScients.com *** '.strip().strip('*').strip('*')
 
 print(titulo1)
+
