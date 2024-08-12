@@ -37,7 +37,51 @@ print(nueva_lista)
 
 
 
-# Proceso unzip 
+# Proceso unzip, separando los elementos de cada lista,tuplas,diccionarios o sets
+
+mezcla=[(1,'a'),(2,'b'),(3,'c')]
+
+numeros,letras=zip(*mezcla)
+
+print(f"Numeros: {numeros}, Letras: {letras}")
+
+
+# Ordenar un zip, ordenamiento usando zip
+
+letras=['c','d','a','e','b']
+numeros=[4,5,6,23,0,1]
+
+
+mezclas=zip(letras,numeros)
+
+print(f"Zip desordenado: {tuple(mezclas)}")
+
+# Ordenar zip
+
+print(f"Zip ordenado: {sorted(zip(numeros,letras))}")
+
+# Crear un diccionario con zip
+
+llaves=['Nombres','Edad','Provincia']
+valores=['Nicolas',19,'Mendoza']
+
+
+mezcla_diccionario=dict(zip(llaves,valores))
+
+print(f"Mezcla de diccionarios: {mezcla_diccionario}")
+
+
+# Actualizar un elemento de nuestro diciconario
+
+llaves=['Edad']
+nueva_edad=[19]
+
+# Con en el metodo update usado para diccionarios, se puede actualizar un nuevo elemento de la llave o de valores, y también se puede usar para agregar una llave o valor
+mezcla_diccionario.update(zip(llaves,nueva_edad))
+
+print(mezcla_diccionario)
+
+
 
 
 
