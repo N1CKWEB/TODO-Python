@@ -1,7 +1,7 @@
 
 
 
-# Funciones closures en pythom, mantiene un estado, un closure es una función que defina a otra, y ademas la puede regresar, la función anidada puede acceder a las variables locales definidas en la función principal o externa.
+# Funciones closures en python, mantiene un estado, un closure es una función que defina a otra, y ademas la puede regresar, la función anidada puede acceder a las variables locales definidas en la función principal o externa.
 
 
 
