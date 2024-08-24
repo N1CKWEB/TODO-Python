@@ -1,6 +1,8 @@
 
 
-# import math 
+import math 
+import random
+from random import choice 
 
 # # Ejercicio - 1 - nivel fácil
 
@@ -192,22 +194,64 @@ calculadora()
 # # Pista: Usa la función open() para abrir el archivo y split() para dividir el texto en palabras.
 # # Simulación de Juego de Dados:
 
-
-
+try:
+ with open('pythonIA.txt', encoding='UTF-8') as file:
+  texto=file.read()
+  palabras=texto.split()
+  print(f"El contenido del archivo es: {texto}")
+  print(f"El número total de palabra es: {len(palabras)}")
+except Exception as e:
+     print(f'El error es: {e}')
+finally:
+     file.close()
+     ("Fin del archivo!")    
+     
 # # Crea un programa que simule el lanzamiento de dos dados y cuente cuántas veces se obtiene un par de números iguales en 100 lanzamientos.
 # # Pista: Usa la función random.randint() para simular el lanzamiento de un dado.
 # # Generador de Contraseñas:
 
+def lanzamientos_de_dados():
+  
+     contador_pares=0
+     contador_impares=0
+     for dados in range(1,100):
+       dado1=random.randint(1,6)
+       dado2=random.randint(1,6)
+       if dado1 == dado2:
+          contador_pares=contador_pares+1
+          print("Es par")
+       else:
+          contador_impares=contador_impares+1
+          print("Es impar")           
+     print(f"Registro de veces que fueron pares: {contador_pares}")     
+     print(f"Registro de veces que fueron impares: {contador_impares}")     
 
+lanzamientos_de_dados()
 
 # # Escribe un programa que genere una contraseña aleatoria con una longitud específica y que contenga letras mayúsculas, minúsculas, números y símbolos.
 # # Pista: Usa la biblioteca random y la función choice() para seleccionar caracteres aleatorios de diferentes conjuntos.
 
 
+def generador_de_contraseña():
+     
+     mayusculas=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+     minisculas=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+     numeros=["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22"]
+     simbolos_especiales=["%","$","#","@","!","/","&"]
+     
+     
+     
+     contraseña_aleatoria=[]
+     for i in range(12):
+        # Escoge un tipo de carácter aleatorio y añade uno de ellos a la contraseña
+        tipo = random.choice([mayusculas, minisculas, numeros, simbolos_especiales])
+        contraseña_aleatoria.append(random.choice(tipo)) 
+          
+     contraseña_aleatoria_nueva="".join(contraseña_aleatoria)    
+     print(f"La contraseña aleatoria es:{contraseña_aleatoria_nueva}")
 
 
-
-
+generador_de_contraseña()
 
 
 
