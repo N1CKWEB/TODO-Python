@@ -68,14 +68,7 @@ class ListaEnteros(ListaSimple):
 class ListaDeEnterosOrdenadas(ListaEnteros,ListaOrdenada):  
      
      pass     
-     
-     
-     
-     
-     
-     
-     
-     
+
          
 lista01=ListaSimple([4,2,6,8,9])
 print(lista01)
@@ -121,4 +114,13 @@ print(ListaDeEnterosOrdenadas.__bases__)
 
 # MRO (Method Resolution Order)
 print(ListaDeEnterosOrdenadas.__mro__)
-
+      
+#Usar el método isinstance
+print('Es estero?',isinstance(23,int))   
+print('Es es una cadena?',isinstance('Messi',str))
+print('Es es una lista de entero ordenada?',isinstance(lista_de_enteros_ordenada,ListaDeEnterosOrdenadas))
+print('Es lista enteros?',isinstance(lista_de_enteros_ordenada,ListaEnteros))
+print('Es lista ordenada?',isinstance(lista_de_enteros_ordenada,ListaOrdenada))
+print('Es lista simple?',isinstance(lista_de_enteros_ordenada,ListaSimple))
+print('Es de tipo object?',isinstance(lista_de_enteros_ordenada,object))
+print('Es de varios tipos?',isinstance(lista_de_enteros_ordenada,(ListaEnteros,ListaSimple)))
