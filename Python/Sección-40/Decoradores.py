@@ -61,10 +61,11 @@ def decorador_repr(cls):
 @decorador_repr
 class Persona:
     
-    def __init__(self,nombre,apellido) -> None:
+    def __init__(self,nombre,apellido,edad) -> None:
         print('2.Se ejecuta el inicializador')
         self._nombre=nombre
         self._apellido=apellido
+        self._edad=edad
     
     
     @property
@@ -75,6 +76,10 @@ class Persona:
     def apellido(self):
         return self._apellido
     
+    @property
+    def edad(self):
+        return self._edad
+    
     @nombre.setter
     def nombre(self,nombre):
         self._nombre=nombre
@@ -83,15 +88,33 @@ class Persona:
     def apellido(self,apellido):
         self._apellido=apellido
         
+    @edad.setter
+    def edad(self,edad):
+        self._edad=edad
+        
     # def __repr__(self) -> str:
     #     return f"{__class__.__name__} [Nombre: {self._nombre} , Apellido: {self._apellido} ]"
     
     
 
-persona1=Persona("Nicolas","Diaz")    
-persona2=Persona("Sergio","Diaz")    
+persona1=Persona("Nicolas","Diaz",19)    
+persona2=Persona("Sergio","Diaz",49)    
 
 print(f"La persona es: {persona1!r}")
 print(f"La persona es: {persona2!r}")
+
+
+# Tiene los métodos de property nombre,apellido, repr
+
+print(dir(Persona))
+
+# Tiene el método sobreescrito
+
+codigo_repr=inspect.getsource(persona1.__repr__)
+print(codigo_repr)
+
+
+
+
 
 
