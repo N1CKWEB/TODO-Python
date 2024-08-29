@@ -1,0 +1,15 @@
+{
+    "clima": [
+      {
+        "principal": "Con nubes",
+        "descripcion": "Pocas nubes"
+      }
+    ],
+    "principal": {
+      "temp": 18,
+      "sensacion": 16,
+      "temp_min": 11,
+      "temp_max": 23
+    },
+    "id": 2345612
+  }
