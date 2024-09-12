@@ -17,7 +17,6 @@ print(f"Resultado de la suma: {suma(22,1)}")
 
 
 
-
 # Valores por default en los parámetros de una función:
 def suma2(num1:int = 2, num2:int = 4) -> int:
     return num1 + num2

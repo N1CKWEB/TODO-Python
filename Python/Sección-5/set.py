@@ -1,4 +1,4 @@
-# Los set en python, no matiene un orden, no permite duplicar elementos, los sets usan llaves
+# Los set en python, no mantiene un orden, no permite duplicar elementos, los sets usan llaves
 # Los set sirven para usarlo cuando no queremos que alla un elemento repetido
 
 
