@@ -49,7 +49,7 @@ boton1=tk.Button(ventana,text='Boton 1',command=evento_uno)
 
 # Manejo de grid, digamos para colocar la posiciones de los botones donde queramos en la pantalla
 
-# sticky=pegajoso (se queda ifjo en uno solo lugar)
+# sticky=pegajoso (se queda fijo en uno solo lugar)
 # i = inner que seria un espacio que dejamos de manera interna para el pady o el ipady para el padding en tkinter
 boton1.grid(row=0,column=0,sticky='NSWE',padx=40, pady=30,ipadx=20,ipady=50,columnspan=2,rowspan=2)
 # boton2.grid(row=1,column=0,sticky='NSWE')

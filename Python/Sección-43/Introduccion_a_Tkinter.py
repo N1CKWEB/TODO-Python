@@ -49,7 +49,6 @@ def evento_click():
 boton1=ttk.Button(ventana,text='Dar Click',command=evento_click)
 boton2=ttk.Button(ventana,text='Dar Click segunda vez',command=evento_click_2)
 
-
 # Utilizar el pack layout manager para mostrar el botón de la ventana
 boton1.pack()
 boton2.pack()
