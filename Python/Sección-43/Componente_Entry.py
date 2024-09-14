@@ -19,7 +19,7 @@ ventana.iconbitmap('C:/Users/LENOVO/OneDrive/Documentos/Ruta de Python Developer
 # width es la cantidad de caracteres que ocupa la caja
 
 
-# justify es para alinear el texto a donde quieras vos, y podemos utilizar la propiedad de show para mostrar ese caracteres como queramos, y la propieda DISABLED es para desabilitar un campo, y NORMAL para habilitar la caja de texto
+# justify es para alinear el texto a donde quieras vos, y podemos utilizar la propiedad de show para mostrar ese caracteres como queramos, y la propiedad DISABLED es para desabilitar un campo, y NORMAL para habilitar la caja de texto
 # entrada1=ttk.Entry(ventana,width=30,justify=tk.CENTER,show='*')  
 entrada1=ttk.Entry(ventana,width=30,justify=tk.CENTER,state=tk.NORMAL)  
 entrada1.grid(row=0,column=0)
@@ -55,5 +55,6 @@ boton1.grid(row=1,column=1)
 
 
 ventana.mainloop()
+
 
 
