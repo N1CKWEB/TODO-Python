@@ -1,7 +1,7 @@
 
 import tkinter as tk
 from tkinter import ttk,messagebox,scrolledtext
-
+from time import sleep
 # Manejo de Tabuladores (Notebook) en Tkinter
 
 
@@ -60,14 +60,24 @@ def crear_componente_tabulador5(tabulador):
   boton_imagen.grid(row=0,column=0)  
   
     
-def crear_componente_tabulador6(tabulador):
+def  crear_componente_tabulador6(tabulador):
   # Creamos el componnete de barra de progreso
   barra_progreso=ttk.Progressbar(tabulador,orient='horizontal',length=550)
   barra_progreso.grid(row=0,column=0,padx=10,pady=10,columnspan=4)
   
   # Metodos para controlar los eventos de la barra de progreso
   def ejecutar_barra():
-    pass
+    barra_progreso['maximum']=100
+    for valor in range(101):
+        # Mandamos a esperar un poco antes de continuar con la ejecución de la barra
+        sleep(0.05)
+        # Incremenetamos nuestra barra de progreso
+        barra_progreso['value']=valor
+        # Actualizamos nuestra barra de progreso
+        barra_progreso.update()
+    
+    barra_progreso['value']=0    
+  
   def ejecutar_ciclo():
    barra_progreso.start()
   
@@ -77,7 +87,7 @@ def crear_componente_tabulador6(tabulador):
   def detener_despues():
       esperar_ms=1000
       ventana.after(esperar_ms,barra_progreso.stop)
-     
+        
   # Botones para controlar los eventos de una barra de progreso
   boton_inicio=ttk.Button(tabulador,text='Ejecutar barra de progreso',command=ejecutar_barra)
   boton_inicio.grid(row=1,column=0)
