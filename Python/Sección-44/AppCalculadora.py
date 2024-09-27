@@ -99,7 +99,7 @@ class Calculadora(tk.Tk):
         
         
         # Boton resultado =
-        boton_resultado=tk.Button(botones_frame,text='=',command=lambda: self.evento_resultado('='),width=10,height=3,border=0,background='red',cursor='hand2').grid(row=4,column=3,padx=1,pady=1)
+        boton_resultado=tk.Button(botones_frame,text='=',command=self.evento_resultado,width=10,height=3,border=0,background='red',cursor='hand2').grid(row=4,column=3,padx=1,pady=1)
         
         
         
@@ -175,12 +175,19 @@ class Calculadora(tk.Tk):
        self.entrada_texto.set(self.expresion)   
        
        
-    def evento_resultado(self,elemento):
-       self.expresion= f'{self.expresion} {elemento}'
-       self.entrada_texto.set(self.expresion)   
-       
-       
-       
+    def evento_resultado(self,):
+      #  Eval (evalua la expresión str como una expresión aritmética) 
+       try:
+          if self.expresion:
+            resultado=str(eval(self.expresion))
+            self.entrada_texto.set(resultado)
+       except SyntaxError as e:
+          messagebox.showerror("ERROR",f'Ocurrio un error: {e}')
+          self.entrada_texto.set('')
+       finally:
+         self.expresion=''
+         
+         
        
 if __name__ == "__main__":
     calculadora = Calculadora()
