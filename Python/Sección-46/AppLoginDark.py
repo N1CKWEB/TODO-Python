@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
+from tkinter import ttk,messagebox
 
 ventana = tk.Tk()
 ventana.geometry('600x400')
@@ -41,8 +41,23 @@ password_caja_texto = ttk.Entry(frame, show='*')
 password_caja_texto.grid(row=2, column=1, sticky=tk.E, padx=5, pady=5)
 
 # boton
+
 login_boton = ttk.Button(frame, text='Enviar')
 login_boton.grid(row=3, column=0, columnspan=2, padx=5, pady=5)
+
+def validar(event):
+    usuario=usuario_caja_texto.get()
+    password=password_caja_texto.get()
+    # usuario = root y password = admin son los valores correctos
+    if usuario == 'root' and password == 'admin':
+        messagebox.showinfo('Login',"Valores correctos")
+    else:
+        messagebox.showerror('Login',"Valores incorrectos")
+        
+        
+# Asociar eventos al boton de login
+login_boton.bind('<Return>',validar) # PRESIONAR LA TECLA DE ENTER
+login_boton.bind('<Button-1>',validar) #CLICK IZQUIERDO DEL MOUSE 
 
 frame.grid(row=0, column=0)
 
