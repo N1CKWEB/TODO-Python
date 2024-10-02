@@ -63,6 +63,20 @@ scroll=ttk.Scrollbar(ventana,orient=tk.VERTICAL,command=tabla.yview)
 tabla.configure(yscroll=scroll.set)
 scroll.grid(row=0,column=1,sticky=tk.NS)
 
+# Definimos el método mostrar registro seleccionado
+def mostrar_registro_seleccionado(event):
+    print('Ejecutando metodo mostrar registro seleccionado')
+    elemento_seleccionado=tabla.selection()[0] #Solo procesamos el primer registro 
+    elemento=tabla.item(elemento_seleccionado) #item
+    persona=elemento['values'] #tupla de una persona
+    print(persona)  
+    messagebox.showinfo('Persona seleccionado',message=f'Persona: {persona}')
+
+
+# asociar el evento select de la tabla
+tabla.bind('<<TreeviewSelect>>',mostrar_registro_seleccionado)
+
+
 #Publicar nuestra tabla
 tabla.grid(row=0,column=0,sticky=tk.NSEW) 
 
