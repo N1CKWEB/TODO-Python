@@ -33,11 +33,8 @@ finally:
 
 # a - enexar información
 
-archivo2=open("copia.txt","a")
-archivo2.write(archivo.read())
-
-archivo.close()
-archivo2.close()
+# archivo2=open("copia.txt","a")
+# archivo2.write(archivo.read())
 
 
 

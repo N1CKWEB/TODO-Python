@@ -661,3 +661,10 @@ HINT:  Perhaps you meant to reference the column "usuario.Id_usuario".
 03:40:20: DEBUG [Conexión.py:38] Conexión obtenida del pool <connection object at 0x0000020EAAA49BE0; dsn: 'user=postgres password=xxx dbname=AppZonaFitGym host=127.0.0.1 port=5432', closed: 0> 
 03:40:20: DEBUG [Conexión.py:44] Regresamos la conexión al pool: <connection object at 0x0000020EAAA49BE0; dsn: 'user=postgres password=xxx dbname=AppZonaFitGym host=127.0.0.1 port=5432', closed: 0> 
 04:20:30: DEBUG [Cliente.py:58] Cliente [ID: 1 Nombre: Nicolas , Apellido: Diaz , Membresia: 2303] 
+04:52:28: DEBUG [Cursor_del_pool.py:13] Inicio del método with __enter__ 
+04:52:28: DEBUG [Conexion.py:29] Creación del pool exitosa <psycopg2.pool.SimpleConnectionPool object at 0x000001994B83C830> 
+04:52:28: DEBUG [Conexion.py:38] Conexión obtenida del pool <connection object at 0x000001994BB15BE0; dsn: 'user=postgres password=xxx dbname=AppZonaFitGym host=127.0.0.1 port=5432', closed: 0> 
+04:52:28: DEBUG [ClienteDAO.py:32] Cliente insertado: Cliente [ID: 1 Nombre: Nicolas , Apellido: Diaz , Membresia: 2303] 
+04:52:28: DEBUG [Cursor_del_pool.py:19] Se ejecuta el método __exit__ 
+04:52:28: DEBUG [Cursor_del_pool.py:25] Commit de la transacción 
+04:52:28: DEBUG [Conexion.py:44] Regresamos la conexión al pool: <connection object at 0x000001994BB15BE0; dsn: 'user=postgres password=xxx dbname=AppZonaFitGym host=127.0.0.1 port=5432', closed: 0> 
