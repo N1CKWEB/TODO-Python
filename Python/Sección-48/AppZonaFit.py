@@ -14,9 +14,10 @@ class App(tk.Tk):
            super().__init__()
            self.configurar_ventana()
            self.configurar_grid()
-           self.configurar_frame_y_info()
+           self.mostrar_titulo()
+           self.mostrar_formulario()
         # #  Mostrar la tabla
-          #  self.mostrar_tablas()
+           self.mostrar_tablas()
            
        def configurar_ventana(self):
                
@@ -32,24 +33,24 @@ class App(tk.Tk):
                          fieldbackground='black')
             self.estilos.configure('TButton', background='#005f73')
             self.estilos.map('TButton', background=[('active', '#0a9396')])
-  
+   
             
        def configurar_grid(self):     
-          frame=ttk.Frame(self)
-          frame.columnconfigure(0,weight=1)
-          frame.columnconfigure(1,weight=3)
           
-          frame.grid(row=0,column=0)
+          self.columnconfigure(0,weight=1)
+          self.columnconfigure(1,weight=1)
+          
            
-       def configurar_frame_y_info(self):
+       def mostrar_titulo(self):
+          
           # Título  
-          etiqueta=ttk.Label(self,text='Zona Fit(GYM)',font=('Arial',20))
-          etiqueta.grid(row=0,column=8,columnspan=2)
+          etiqueta=ttk.Label(self,text='Zona Fit (GYM)',font=('Arial',20),background=App.COLOR_VENTANA,foreground='white')
           
-          # Nombre
-          nombre_etiqueta=ttk.Label(self,text='Nombre')
-          nombre_etiqueta.grid(row=1,column=0,sticky=tk.W,padx=5,pady=5)
-           
+          etiqueta.grid(row=0,column=0,columnspan=2,pady=30)
+          
+       def mostrar_formulario(self):
+          
+          # Nombre  
           nombre_caja_de_texto=ttk.Entry(self)
           nombre_caja_de_texto.grid(row=1,column=1,sticky=tk.E,padx=5,pady=5)   
      
@@ -92,9 +93,12 @@ class App(tk.Tk):
           # boton_guardar.bind('<Button-1>',validar) 
           # boton_eliminar.bind('<Button-1>',validar) 
           # boton_limpiar.bind('<Button-1>',validar) 
+       def mostrar_tablas(self):     
+          # Creamos un frame para mostar la tabla
+          self.frame_table=ttk.Frame(self)
+          # Definimos los estilos de la tabla
           
-          
-
+              
 if __name__ == "__main__":
     appFit=App()
     appFit.mainloop()
