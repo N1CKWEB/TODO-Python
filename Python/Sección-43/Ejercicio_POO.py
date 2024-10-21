@@ -45,12 +45,20 @@ class Componentes(tk.Tk):
 
     def _crear_componente_tabulador5(self, tabulador):
         imagen = tk.PhotoImage(file='C:/Users/LENOVO/OneDrive/Documentos/Ruta de Python Developer/Python/Sección-43/python-logo.png')
-
+         
         def mostrar_detalles_imagen():
             messagebox.showinfo('Mas info de la imagen', f"Nombre de la imagen: {imagen.cget('file')}")
 
         boton_imagen = ttk.Button(tabulador, image=imagen, command=mostrar_detalles_imagen)
         boton_imagen.grid(row=0, column=0)
+
+        imagen_2 = tk.PhotoImage(file='C:/Users/LENOVO/OneDrive/Documentos/Ruta de Python Developer/Python/Sección-43/Trainsmart.png')
+         
+        def mostrar_detalles_imagen_2():
+            messagebox.showinfo('Mas info de la imagen', f"Nombre de la imagen: {imagen_2.cget('file')}")
+
+        boton_imagen_2 = ttk.Button(tabulador, image=imagen_2, command=mostrar_detalles_imagen_2)
+        boton_imagen_2.grid(row=1, column=0,padx=4,pady=10)
 
     def _crear_componente_tabulador6(self, tabulador):
         barra_progreso = ttk.Progressbar(tabulador, orient='horizontal', length=550)
