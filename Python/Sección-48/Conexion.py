@@ -3,7 +3,7 @@ from Logger_base import log
 import sys
 class Conexion:
     
-    _DATABASE="AppZonaFit"            
+    _DATABASE="AppZonaFitGym"            
     _USERNAME = "postgres"    
     _PASSWORD = "admin"    
     _DB_PORT = "5432"

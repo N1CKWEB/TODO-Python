@@ -48,10 +48,10 @@ if __name__ == "__main__":
     # Insertar cliente
     usuario02 = Cliente(id_cliente=2, nombre='Juan', apellido='Martinez', membresia='2203')
     usuario_insertado = ClienteDAO_NEW.insertar_bd(usuario02)
-    usuario03 = Cliente(id_cliente=3, nombre='Naim', apellido='Ramirez', membresia='2104')
-    usuario_insertado = ClienteDAO_NEW.insertar_bd(usuario03)
-    usuario04 = Cliente(id_cliente=4, nombre='Nacho', apellido='Borcia', membresia='2305')
-    usuario_insertado = ClienteDAO_NEW.insertar_bd(usuario04)
+    
+    usuario_seleccionado=ClienteDAO_NEW.seleccionar_bd(usuario02)
+    
+    print(f'Usuario seleccionado: {usuario_seleccionado}')
     
     
     

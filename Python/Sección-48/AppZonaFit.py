@@ -94,7 +94,7 @@ class App(tk.Tk):
         # Asociar el evento de la tabla
         self.tabla.grid(row=0,column=0,sticky=tk.NSEW)
          
-        #  Asocuar el evento select
+        #  Asociar el evento select
         self.tabla.bind('<<TreeviewSelect>>',self.cargar_tabla)
         self.frame_table.grid(row=1,column=1,padx=20)
 
@@ -132,12 +132,13 @@ class App(tk.Tk):
             return False
 
     def guardar_cliente(self):
+        
       # Aquí va la lógica para guardar el cliente en la base de datos
        nombre=self.nombre_caja_de_texto.get()
        apellido=self.apellido_caja_de_texto.get()
        membresia=self.membresia_caja_de_texto.get()
     
-    #   Validamos el valor del self.ind_ciente
+    #   Validamos el valor del self.id_ciente
        if self.id_cliente is None:
         cliente=Cliente(nombre=nombre,apellido=apellido,membresia=membresia)
         ClienteDAO_NEW.insertar_bd(cliente)
@@ -160,7 +161,7 @@ class App(tk.Tk):
             membresia=cliente_t[3]
             # Antes de cargar, limpiamos el formulario
             self.limpiar_formulario()
-            # Cargar los valores en el formulario
+            # # Cargar los valores en el formulario
             self.nombre_caja_de_texto.insert(0,nombre)
             self.apellido_caja_de_texto.insert(0,apellido)
             self.membresia_caja_de_texto.insert(0,membresia)
@@ -215,3 +216,47 @@ class App(tk.Tk):
 if __name__ == "__main__":
     appFit = App()
     appFit.mainloop()
+
+
+
+
+# #   ÚLTIMA PARTE DE REALIZAR
+#     def seguimiento_registrado_anteriormente(self, event=None):
+        
+#         # Crear ventana para mostrar entrenamientos
+        
+        
+#         entrenamientos = Registrar_Entrenamiento_RealizadoDAO.seleccionar_bd()
+#         if entrenamientos:
+#             ventana_seguimiento = ctk.CTkToplevel(self)
+#             ventana_seguimiento.title('Entrenamientos Registrados')
+#             ventana_seguimiento.geometry('300x500')
+
+
+#             # Crear un Treeview
+            
+            
+#             tree = ttk.Treeview(ventana_seguimiento, columns=("ID", "Tipo", "Grupos Musculares", "Duración"), show="headings",)
+#             tree.heading("ID", text="ID")
+#             tree.heading("Tipo", text="Tipo de Ejercicio")
+#             tree.heading("Grupos Musculares", text="Grupos Musculares")
+#             tree.heading("Duración", text="Duración (min)")
+ 
+             
+#             # Insertar datos en el Treeview
+#             for entrenamiento in entrenamientos:
+#                 tree.insert("", "end", values=(
+#                     entrenamiento["id_registrar_entrenamiento_realizado"],
+#                     entrenamiento["tipo_de_ejercicio"],
+#                     entrenamiento["grupo_muscular_trabajado"],
+#                     entrenamiento["duracion_del_entrenamiento"]
+#                 ))
+
+#             tree.pack(padx=10, pady=10)
+#         else:
+#             messagebox.showinfo("Info", "No hay entrenamientos registrados.")
+           
+#         # Botón para eliminar entrenamiento
+#         btn_eliminar = ctk.CTkButton(ventana_seguimiento, text="Eliminar", command=self.eliminar_entrenamiento)
+#         btn_eliminar.grid(row=2, column=0, padx=10, pady=5, sticky="ew")
+        
