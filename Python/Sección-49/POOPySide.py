@@ -5,6 +5,10 @@ from PySide6.QtGui import QAction
 from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow,QPushButton
 
 
+
+
+
+
 class VentanaPySide(QMainWindow):
     
     def __init__(self):
@@ -50,6 +54,8 @@ if __name__ == "__main__":
     ventana.show()
     # Y con esto ejecutamos la aplicación
     sys.exit(app.exec())
+
+
 
 
 
