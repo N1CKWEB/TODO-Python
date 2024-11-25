@@ -8,7 +8,6 @@ from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow,QP
 
 
 
-
 class VentanaPySide(QMainWindow):
     
     def __init__(self):
