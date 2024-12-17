@@ -25,10 +25,14 @@ class ComboBox(QMainWindow):
       linea_texto.setPlaceholderText('Introducce tu nombre:')
     
     # Monitoreamos el evento change 
-    
+     
     # Caja de texto de solo lectrua
+     
+    #  Solo lectura
       # linea_texto.setReadOnly(True)
-    
+      # validación mask
+      linea_texto.setInputMask('00-0000-0000')
+          
     # Monitorear enter, cmabio seleccionado texto, cambio texto
       linea_texto.returnPressed.connect(self.enter_presionado) 
       linea_texto.selectionChanged.connect(self.cambio_de_seleccion)
@@ -102,7 +106,7 @@ class ComboBox(QMainWindow):
     
     def enter_presionado(self):
       print(f"Se presiono el __enter__")
-      self.centralWidget().setText('Nicolas Ariel')
+      self.centralWidget().setText('00-0000-0000')
     
     def cambio_de_seleccion(self):
       print("Cambio seleccion texto")  
